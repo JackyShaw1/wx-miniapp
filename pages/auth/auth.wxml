@@ -1,0 +1,4 @@
+<!--pages/auth/auth.wxml-->
+<view>
+  <web-view src="{{url}}" onMessage="handlerMessage"></web-view>
+</view>

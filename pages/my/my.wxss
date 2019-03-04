@@ -1,0 +1,243 @@
+.page{
+  width: 100%;
+  background: #f3f3f3;
+  padding-top: 20rpx;
+}
+.header-wrap{
+  margin: 20rpx;
+  margin-top: 0px;
+  height: 200rpx;
+  padding: 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}
+
+.header-info{
+  display: flex;
+  padding: 30rpx;
+  align-items:center;/*垂直居中*/
+}
+.header-left{
+  width: 120rpx;
+  height: 120rpx; 
+  border: 3px solid #fff;
+  overflow:hidden;
+  border-radius: 50%;
+}
+.header-right{
+  flex: 1;
+  line-height: 40rpx;
+  font-size: 30rpx;
+}
+.userName{
+  margin-left: 30rpx;
+  padding-left: 20rpx;
+  border-left: 4rpx solid #c4192c;
+}
+
+.userNumber{
+  font-size: 24rpx;
+  height: 40rpx;
+  line-height: 40rpx
+}
+
+
+
+/* 折叠面板样式 */
+.i-cell-item{
+  margin-left: 30rpx;
+  border-bottom: 1px solid #ddd;
+}
+.wx-list-item-thumb {
+    width: 44rpx;
+    height: 44rpx;
+    vertical-align: middle;
+}
+.a-collapse {
+  background-color: #fff;
+  color: #000;
+  padding-left: 30rpx;
+}
+
+.a-collapse-title,
+.a-collapse-content {
+  border-bottom: 1px solid #ddd;
+}
+
+.a-collapse-title {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+.a-collapse-title-arrow {
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+  width: 30rpx;
+  height: 30rpx;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg width='16' height='26' viewBox='0 0 16 26' xmlns='http://www.w3.org/2000/svg'><path d='M2 0L0 2l11.5 11L0 24l2 2 14-13z' fill='%23C7C7CC' fill-rule='evenodd'/></svg>");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform: rotate(90deg);
+}
+.a-collapse-title-arrow-up {
+  transform: rotate(270deg);
+}
+
+.a-collapse-content {
+  padding-left: 60rpx;
+  font-size: 30rpx;
+  margin-bottom: -1px;
+}
+
+.a-collapse-item-thumb{
+  width: 44rpx;
+  height: 44rpx;
+  vertical-align: middle;
+  position: relative;
+  top: -3rpx;
+  margin-right: 5px;
+}
+
+.a-collapse-item-content{
+  color: #000;
+  font-size: .34rem;
+  text-align: left;
+  line-height: 1.5;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: .14rem;
+  padding-bottom: .14rem;
+}
+
+.a-collapse-item-hover{
+   background-color: #ddd;
+}
+
+/* 删除按钮样式 */
+.i-swipeout-demo-button-group{
+    height:100%;
+    width:100%;
+}
+.delete-button{
+  height:inherit;
+  align-items:center; 
+  display: -webkit-flex;
+  justify-content:center;
+  white-space:nowrap;
+  box-sizing:border-box;
+  text-align: center;
+  background:#ed3f14;
+  color:#fff;
+  width:100px;
+}
+
+
+/* 面板样式 */
+.panel{
+  margin: 20rpx;
+  padding: 10rpx 20rpx;
+  background: #fff;
+  border-radius: 12rpx;
+}
+
+.panel>view.panel-item:last-child{
+  border-bottom: none;
+}
+
+.panel-title{
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+}
+
+.panel-title>image{
+  padding: 15rpx 0rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.panel-title>text{
+  padding: 0rpx 10rpx;
+  font-size: 30rpx;
+}
+
+.panel-item{
+  line-height: 80rpx;
+  display: flex;
+  border-bottom: 1px solid #cccccc;
+  font-size: 30rpx;
+  position: relative;
+}
+
+.panel-item.item-hover{
+  background-color: #ddd;
+}
+
+.panel-item .panel-item-label{
+  width: 200rpx;
+  color: #333333;
+}
+.panel-item .panel-item-value{
+  flex: 1;
+  color: #666666;
+}
+
+.panel-item .panel-item-title{
+  flex: 1;
+  color: #333333;
+}
+
+.list-arrow {
+  width: 26rpx;
+  height: 80rpx;
+  background: url('../../images/common-img/arrow-left.png') no-repeat center;
+  background-size: 50rpx 50rpx;
+}
+
+.product-item>view{
+  flex: 1;
+  color: #666666;
+  padding: 20rpx 0rpx;
+  line-height: 40rpx;
+}
+.product-item>view.title>text{
+  padding-left: 10rpx;
+  border-left: 4rpx solid #c5182b;
+   color: #333333;
+}
+.product-item>view:nth-child(2){
+  text-align: center;
+}
+
+.product-item>view:nth-child(3){
+  text-align: right;
+}
+
+.btn{
+  margin-top: 40rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  text-align: center;
+  background: linear-gradient(to right, #d0323f , #fe5029);
+  color: #fff;
+  border-radius: 8rpx;
+}
+
+.item-hover{
+  background-color: #ddd;
+}
+
+.btn>image{
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+  position: relative;
+  top: 8rpx;
+}

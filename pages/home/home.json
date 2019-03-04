@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "微众税银征信+",
+  "usingComponents": {
+    "ff-canvas": "@antv/f2-canvas"
+  }
+}

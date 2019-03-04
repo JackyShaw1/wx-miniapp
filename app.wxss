@@ -1,0 +1,13 @@
+/**app.wxss**/
+page {
+  background: #fff;
+  font-family: '微软雅黑';
+}
+
+.clearfix:after { 
+  content: '';
+  height: 0; 
+  display: block;
+  clear: both; 
+  visibility: hidden;
+}

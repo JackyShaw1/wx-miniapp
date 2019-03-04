@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "表单",
+  "usingComponents": {
+    "i-toast": "../../dist/toast/index"
+  }
+}

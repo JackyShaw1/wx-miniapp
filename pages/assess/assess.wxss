@@ -1,0 +1,108 @@
+/* pages/assess/assess.wxss */
+.page{
+  width: 100%;
+  position: relative;
+}
+
+.banner{
+  width: 100%;
+  height: 430rpx;
+  background-size: 100% 100%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.banner>image.bg{
+  width: 100%;
+  height: 100%;
+}
+.banner-info{
+  width: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+}
+.companyName{
+  padding-top: 60rpx;
+  font-size: 34rpx;
+  font-weight: 500;
+  line-height: 60rpx;
+}
+
+.assess-tip{
+  padding-top: 30rpx;
+  font-size: 20rpx;
+  line-height: 40rpx;
+}
+
+.product-recommend{
+  width: 650rpx;
+  background: #fff;
+  position: absolute;
+  top: 200rpx;
+  left: 50%;
+  margin-left: -325rpx;
+  border:1px solid rgba(193,193,193,1);
+  border-radius:5px;
+}
+
+.product-list{
+  padding-top: 60rpx;
+  padding-bottom: 30rpx;
+  width: 388rpx;
+  margin: 0 auto;
+ 
+}
+
+.product-cell{
+  width: 100%;
+  height: 120rpx;
+  line-height: 80rpx;
+  margin-bottom: 30rpx;
+
+}
+.product-cell label{
+  width: 100%;
+  display: flex;
+}
+.product-cell label radio{
+  line-height: 80rpx;
+  margin: auto 60rpx;
+  margin-left: 0rpx;
+}
+.product-cell label image{
+  width: 282rpx;
+  height: 80rpx;
+}
+
+.addBtn{
+  padding-left: 104rpx;
+  background-size: 32rpx 32rpx;
+  text-align: center;
+  line-height: 80rpx;
+  position: relative;
+}
+
+.add-icon{
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  left: 10rpx;
+  top: 10rpx;
+}
+.add-icon>image{
+  width: 100%;
+  height: 100%;
+}
+
+.submitBtn{
+  width: 518rpx;
+  height: 91rpx;
+  line-height: 91rpx;
+  background: linear-gradient(90deg,rgba(255,74,83,1) 0%,rgba(255,139,141,1) 100%);
+  border-radius: 46rpx;
+  box-shadow: 0px 5px 10px rgba(255,82,22,0.26);
+  color: #fff;
+  margin: 60rpx auto;
+  margin-top: 0rpx;
+}

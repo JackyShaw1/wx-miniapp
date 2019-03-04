@@ -1,0 +1,39 @@
+<!--pages/assess/assess.wxml-->
+<view class="page">
+  <view class="banner">
+    <image class='bg' src="../../images/assess-img/bg2.png" mode='scaleToFill' />
+    <view class='banner-info'>
+      <view class="companyName">{{companyName}}</view>
+      <view class="assess-tip"> 为企业提供信用状况评估, 可提供金融等信用服务, 助力小微企业发展 </view>
+    </view>
+  </view>
+  <view class="product-recommend">
+    <view class="product-wrap">
+      <view>
+        <form bindsubmit="formSubmit" onReset="formReset">
+          <view class="product-list" style="padding-bottom: 30rpx;">
+            <radio-group name="productId"> 
+              <block  wx:for="{{productList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+                <view class="product-cell">
+                  <label>
+                    <radio value="{{item.productId}}" />
+                    <image src="{{item.imgUrl}}" mode="aspectFit" />
+                  </label>
+                </view>
+              </block>
+            </radio-group> 
+            <view class="addBtn" bindtap="addAuthAssess">
+              <view class='add-icon'>
+                <image src='../../images/assess-img/add.png' mode='scaleToFill'></image>
+              </view>
+              <text>指定机构</text>
+            </view>
+          </view>
+          <button class="submitBtn" formType="submit">发送</button>
+        </form>  
+      </view>
+    </view>
+  </view>
+
+  <i-toast id="toast" />
+</view>

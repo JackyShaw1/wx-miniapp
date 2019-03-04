@@ -1,0 +1,55 @@
+<!--pages/linkForm/linkForm.wxml-->
+<view class="page">
+  <view class='product-header'>
+    <view class='header-left'>
+      <image src="../../images/assess-img/zhaida-logo.png" mode="aspectFit"></image>
+    </view>
+    <view class='header-right'>
+      <view class='bank-title'>渣打银行</view>
+      <view class='bank-product-name'>中小企业无抵押小额贷款</view>
+    </view>
+    <image class='header-bg' src="../../images/assess-img/header-bg.png" mode="aspectFit"></image>
+  </view>
+
+  <view class="form-box">
+    <form bindsubmit="formSubmit" onReset="formReset">
+      <view class="form-wrap">
+        <view class="input-group" style='padding-bottom: 0rpx;'>
+          <view class='input-label'>企业名称 </view>
+          <view class='input-value'>
+            <text>深圳市微众税银信息服务有限公司</text>
+          </view>
+        </view>
+        <view class="input-group" style='padding-bottom: 60rpx'>
+          <view class='input-label'>联系人</view>
+          <view class='input-value'>
+             <text>李**</text>
+          </view>
+        </view>
+        <view class="input-group">
+          <view class='input-label'>电话号码</view>
+          <view class='input-value'>
+            <input name="phoneNum" maxlength='11' placeholder="请输入联系人电话" />
+          </view>
+        </view>
+        <view class="input-group">
+          <view class='input-label'>申请金额</view>
+          <view class='input-value money-value'>
+            <input name="phoneNum" style='display: inline-block;' maxlength='3'  placeholder="请输入10到175的整数" />
+          </view>
+          <view class='unit'>万元</view>
+        </view>
+        <view class="input-group">
+          <view class='input-label'>贷款期限</view>
+          <view class='input-value'>
+            <picker class='select' bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              {{array[index]}}
+            </picker>
+          </view>
+        </view>
+        <button class="submitBtn" formType="submit">提交</button>
+      </view>
+    </form>  
+  </view>
+  <i-toast id="toast" />
+</view>

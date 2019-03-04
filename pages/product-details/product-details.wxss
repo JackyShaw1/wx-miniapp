@@ -1,0 +1,104 @@
+.page{
+  width: 100%;
+  position: relative;
+  background: #fff;
+}
+.product-header{
+  padding-top:  60rpx;
+  padding-left: 60rpx;
+  padding-bottom: 48rpx;
+  display: flex;
+  position: relative;
+}
+.header-bg{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 270rpx;
+  height: 242rpx;
+}
+.header-left{
+  width: 134rpx;
+  height: 134rpx;
+  margin-right: 40rpx;
+}
+.header-left>image{
+  width: 100%;
+  height: 100%;
+}
+.header-right{
+  flex: 1;
+  height: 60rpx;
+}
+.bank-title{
+  font-size: 36rpx;
+  line-height: 60rpx;
+}
+.bank-product-name{
+  font-size: 26rpx;
+  line-height: 50rpx;
+  color: #666;
+}
+
+.group{
+  margin:20rpx 40rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.title{
+  font-size: 32rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.title>text{
+  padding-left: 14rpx;
+  border-left: 4rpx solid #C2172D;
+}
+
+.content{
+  font-size: 26rpx;
+  line-height: 50rpx;
+  padding-bottom: 40rpx;
+}
+
+.condition-wrap{
+  display: flex;
+  text-align: center;
+  padding-top: 20rpx;
+  padding-bottom: 60rpx;
+}
+
+.applyFor-intro-left,.applyFor-intro-right{
+  flex: 1;
+}
+
+.applyFor-value{
+  font-size: 40rpx;
+  color: #F36519;
+  line-height: 60rpx
+}
+.applyFor-label{
+  font-size: 28rpx;
+  color: #666666;
+   line-height: 40rpx
+}
+
+.flow-map{
+  padding-top: 0rpx;
+  padding-bottom: 40rpx;
+}
+.flow-map>image{
+  height:200rpx;
+}
+
+.step-btn{
+  width:500rpx;
+  height:88rpx;
+  line-height: 88rpx;
+  background:linear-gradient(270deg,rgba(253,110,78,1) 0%,rgba(196,24,45,1) 100%);
+  border-radius:20rpx;
+  margin: 40rpx auto;
+  color: #fff;
+  text-align: center;
+  font-size:32rpx;
+}

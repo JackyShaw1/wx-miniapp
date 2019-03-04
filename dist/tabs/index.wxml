@@ -1,0 +1,28 @@
+
+<wxs module="util">
+  var calcScrollLeft = function(windowWidth, tabWidth, current){
+    var scrollInit = current * windowWidth * tabWidth;
+    if (current <= 2) {
+      scrollInit = 0;
+    } else {
+      scrollInit = (current - 2) * windowWidth * tabWidth;
+    }
+    return scrollInit;
+  };
+  module.exports.calcScrollLeft = calcScrollLeft;
+</wxs>
+<view class='am-tabs-bar-content-wrap'>
+  <view class='am-tabs-scroll-left'></view>
+  <view class='am-tabs-scroll-right'></view>
+  <scroll-view wx:if="{{ scroll }}"  
+              scroll-x="true" 
+              scroll-with-animation="{{animation}}"
+              scroll-left="{{util.calcScrollLeft(windowWidth, tabWidth, current)}}"
+              class="i-class i-tabs i-tabs-scroll {{ fixed ? 'i-tabs-fixed' : '' }}">
+              <slot></slot>
+  </scroll-view>
+  <view wx:else class="i-class i-tabs {{ fixed ? 'i-tabs-fixed' : '' }}"><slot></slot></view>
+</view>
+
+
+

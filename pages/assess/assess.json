@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "评估",
+  "usingComponents": {
+    "i-toast": "../../dist/toast/index"
+  }
+}

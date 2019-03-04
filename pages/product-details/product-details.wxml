@@ -1,0 +1,44 @@
+<view class="page">
+  <view class='product-header'>
+    <view class='header-left'>
+      <image src="../../images/assess-img/zhaida-logo.png" mode="aspectFit"></image>
+    </view>
+    <view class='header-right'>
+      <view class='bank-title'>渣打银行</view>
+      <view class='bank-product-name'>中小企业无抵押小额贷款</view>
+    </view>
+    <image class='header-bg' src="../../images/assess-img/header-bg.png" mode="aspectFit"></image>
+  </view>
+
+  <view class='product-intro group'>
+      <view class='product-intro-title title'>
+        <text>产品简介</text>
+      </view>
+      <view class='content'>渣打银行无抵押小额贷款, 无需任何财产担保, 手续简便,审批迅速, 放款及时, 从而帮助您的企业解决融资难的窘境,满足您企业对流动资金的需求。</view>
+  </view>
+
+  <view class='applyFor-intro group'>
+    <view class='title'>
+      <text>申请条件</text>
+    </view>
+    <view class='condition-wrap'>
+      <view class='applyFor-intro-left'>
+        <view class='applyFor-value'>>=3年</view>
+        <view class='applyFor-label'>企业成立年限</view>
+      </view>
+      <view class='applyFor-intro-right'>
+        <view class='applyFor-value'>500万-5100万</view>
+        <view class='applyFor-label'>近半年销售额</view>
+      </view>
+    </view>
+  </view>
+  <view class='loan-flow group'>
+    <view class='title'>
+      <text>贷款流程</text>
+    </view>
+    <view class='flow-map'>
+      <image  src="../../images/assess-img/flow-map.png" mode="aspectFit"></image>
+    </view>
+  </view>
+  <navigator class="step-btn" url="/pages/linkForm/linkForm" hover-class="className">立即申请</navigator>
+</view>

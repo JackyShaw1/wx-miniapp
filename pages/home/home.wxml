@@ -1,0 +1,105 @@
+
+
+<view class="page">
+  <!-- 没有企业授权 -->
+  <view wx:if="{{!isAuthStatus}}">
+    <view class="vz-banner">
+      <image src='../../images/home-img/banner01.png' mode="aspectFit"></image>
+    </view>
+    <view  class="bank-list">
+      <block wx:for="{{bankList}}" a:for-item="item" a:for-index="index" wx:key="index">
+          <view class="bank-item">
+            <image src="../../images/home-img/{{item.thumb}}" mode="aspectFit" />
+            <view>{{item.title}}</view>
+          </view>
+      </block>
+    </view>
+    <view class="selectArea-wrap">
+      <view class="auth-title">电子税局共享认证</view>
+      <view class="select-area-title">
+        <view class="select-area-text">
+          <text>请选择服务区域</text>
+        </view>
+      </view>
+      <view class="area-list clearfix">
+        <block wx:for="{{cityList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+          <view bindtap='clickCityHandle'
+                data-provinceCode="{{item.provinceCode}}" 
+                data-cityCode="{{item.cityCode}}" 
+                class="area-item">
+                {{item.areaName}}
+              </view>
+        </block>
+      </view>
+      <view class="more-btn" bindtap="taxAuth" >
+        <text>更多</text>
+        <view class="down-arrow"></view>
+      </view>
+    </view>
+    <view class="home-lookReportBtn" hover-class="lookReportBtn-hover" bindtap="taxAuth">
+        查看报告
+    </view>
+  </view>
+  <!-- 有授权信息 -->
+  <view wx:else>
+    <view class="hander">
+      <view class="title">我的企业评级</view>
+      <view class="rank-img">
+         <ff-canvas id="dashBored-chart"  canvas-id="dashBored-chart" opts="{{ opts }}"></ff-canvas>
+      </view>
+      <view class="lookReportBtn" bindtap="lookReportHander">
+        查看报告
+      </view>
+    </view>
+    <view class="product-wrap">
+      <view class="product-list">
+        <view class="product-item">
+          <view class="titel-wrap">
+            <image src="../../images/assess-img/money-icon.png" mode="aspectFit" />
+            <text class="product-name">智能信贷</text>
+            <text class="product-exeplain">银行信贷 精准推荐</text>
+          </view>
+          <view class="content-wrap">
+            <view class="cont-logo">
+              <image src="../../images/assess-img/zhaida-logo.png" mode="aspectFit" />
+            </view>
+            <view class="cont-context">
+              <view class="cont-context-title">中小企业无抵押小额贷款</view>
+              <view class="advantage">最高175万贷款额度</view>
+              <view class="advantage">贷款期限1-3年</view>
+            </view>
+            <view class="cont-tag">
+              <view>额度高</view>
+              <view>期限长</view>
+            </view>
+          </view>
+          <!-- <view class="applyNowBtn" onTap="wsClickHandle" hover-class="className">立即申请</view> -->
+          <navigator class="applyNowBtn" url="/pages/product-details/product-details" redirect hover-class="className">立即申请</navigator>
+        </view>
+        <!-- <view class="product-item">
+          <view class="titel-wrap">
+            <image src="../../images/assess-img/product02-icon.png" mode="aspectFit" />
+            <text class="product-name">融资租赁</text>
+            <text class="product-exeplain">满足企业旧设备融资和租赁新设备的需求</text>
+          </view>
+          <view class="content-wrap">
+            <view class="cont-logo">
+              <image src="../../images/assess-img/yuandong-icon.png" mode="aspectFit" />
+              <view>远东宏信</view>
+            </view>
+            <view class="cont-context">
+              <view class="cont-context-title">有税贷更多</view>
+              <view class="advantage">期限长达五年</view>
+              <view class="advantage">设备融资比例高达100%</view>
+            </view>
+            <view class="cont-tag">
+              <view>无需担保抵押</view>
+            </view>
+          </view>
+          <navigator class="applyNowBtn" url="/pages/product-details/product-details" redirect hover-class="className">立即查看</navigator>
+        </view> -->
+      </view>
+    </view>
+  </view>
+ 
+</view>

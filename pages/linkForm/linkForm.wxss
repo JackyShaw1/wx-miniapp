@@ -1,0 +1,98 @@
+/* pages/linkForm/linkForm.wxss */
+
+.page{
+  width: 100%;
+  position: relative;
+}
+
+.product-header{
+  padding-top:  60rpx;
+  padding-left: 60rpx;
+  padding-bottom: 48rpx;
+  display: flex;
+  position: relative;
+}
+.header-bg{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 270rpx;
+  height: 242rpx;
+}
+.header-left{
+  width: 134rpx;
+  height: 134rpx;
+  margin-right: 40rpx;
+}
+.header-left>image{
+  width: 100%;
+  height: 100%;
+}
+.header-right{
+  flex: 1;
+  height: 60rpx;
+}
+.bank-title{
+  font-size: 36rpx;
+  line-height: 60rpx;
+}
+.bank-product-name{
+  font-size: 26rpx;
+  line-height: 50rpx;
+  color: #666;
+}
+
+.form-box{
+ padding: 40rpx;
+}
+
+.input-group{
+  display: flex;
+  line-height: 80rpx;
+  padding-bottom: 40rpx;
+}
+
+.input-label{
+  width: 160rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  font-size: 28rpx;
+  padding-right: 20rpx;
+  text-align: right;
+  color: #666666;
+}
+
+.input-value{
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+  height: 70rpx;
+  line-height: 68rpx;
+}
+.input-value>input, .select{
+  border: 1px solid #C2C2C2;
+  border-radius: 8rpx;
+  width: 391rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  padding-left: 10rpx;
+}
+
+.unit{
+  width: 80rpx;
+  height: 68rpx;
+  font-size: 28rpx;
+  line-height: 68rpx;
+  text-align: center;
+  color: #333;
+}
+.submitBtn{
+  width:500rpx;
+  height:88rpx;
+  background:linear-gradient(270deg,rgba(253,110,78,1) 0%,rgba(196,24,45,1) 100%);
+  border-radius:20rpx;
+  line-height: 88rpx;
+  box-shadow: 0px 5px 10px rgba(255,82,22,0.26);
+  color: #fff;
+  margin-top: 80rpx;
+}

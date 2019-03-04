@@ -1,0 +1,13 @@
+<!--pages/success/success.wxml-->
+<view class="page">
+  <view class="success-icon">
+    <image src="../../images/home-img/success.png" mode="aspectFit" />
+  </view>
+  <view class="sucess-info">
+    <view class="companyName">{{companyName}}</view>
+    <view class="success-tip">恭喜认证成功!</view>
+  </view>
+  <view class="btn-area">
+    <view class="preview-btn" hover-class="preview-btn-hover" bindtap="getReportHandler">查看报告</view>
+  </view>
+</view>
